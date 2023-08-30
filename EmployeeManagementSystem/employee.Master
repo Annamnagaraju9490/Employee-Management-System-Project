@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="employees.master.cs" Inherits="EmployeeManagementSystem.employee" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            color: #FF0000;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div align="center">
+            <h1>Welcome To Emoloyee Management System</h1>
+            <asp:LinkButton ID ="lnkhomepage" runat="server" >HOME PAGE</asp:LinkButton>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+             <asp:LinkButton ID="lnkaddemp" runat="server" >ADD EMPLOYEE DETAILS</asp:LinkButton>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+            <asp:LinkButton ID="lnkdis" runat="server">DISPLAY EMPLOYEE DETAILS</asp:LinkButton>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+            <asp:LinkButton ID="lnkupdateemp" runat="server" >UPDATE EMPLOYEE DETAILS</asp:LinkButton>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+            <asp:LinkButton ID="logout" runat="server">Logout</asp:LinkButton>
+
+
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
